@@ -3,14 +3,15 @@ import Logo from './Logo'
 import { ImSearch } from "react-icons/im";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoCart } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <>
-        <header className='h-20 shadow-md'  >
+        <header className=' bg-white  h-20 shadow-md'  >
             <div className=' h-full  container mx-auto flex items-center justify-between'>
                 <div className='' >
-                       <Logo w={10} h={50} />
+                       <Link to={"/"}  ><Logo/></Link>
                 </div>
 
                 {/* //Search_panel */}
@@ -32,7 +33,7 @@ const Header = () => {
                  <p className='text-xl'>0</p>
                  </div>
                 </div>
-                <button className='px-3 bg-red-600 py-1 rounded-full  text-white hover:bg-red-700'>login</button>
+                <Link to={"/login"} className='px-3 bg-red-600 py-1 rounded-full  text-white hover:bg-red-700'>login</Link>
                 </div>
 
                 
