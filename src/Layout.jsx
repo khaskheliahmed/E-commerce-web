@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Compounts/Header'
-import Login from './Pages/Login'
+import Footer from './Compounts/Footer'
 
 
 
@@ -10,7 +10,11 @@ const Layout = () => {
     <>
     
     <Header/>
-    <Outlet/>
+    <main className='min-h-[calc(100vh-120px)] pt-16'>
+          <Outlet/>
+        </main>
+
+      <Footer/>
     
     
     </>

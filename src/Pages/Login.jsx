@@ -65,7 +65,7 @@ const Login = () => {
                   </div>
                 </div>
                 <Link
-                  to={"/forgotpassword"}
+                  to={"/forgotpasswrod"}
                   className="block w-fit ml-auto hover:underline hover:text-red-600"
                 >
                   Forgot password?
